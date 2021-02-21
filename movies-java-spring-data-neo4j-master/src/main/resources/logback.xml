@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60000 milliseconds"> //scan for configuration modifications every 60 secs.
+  <include file="src/main/resources/logback-included.xml"/> //Include a configuration file from an external folder. We get to root path from enviroment an variable which is set in the tomcat's setenv.sh file.
+ <logger name="org.apache.http" level="DEBUG">  </logger>
+     <logger name="httpclient" level="DEBUG" additivity="false"> </logger>
+</configuration>
